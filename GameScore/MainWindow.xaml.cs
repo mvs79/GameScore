@@ -35,7 +35,28 @@ namespace GameScore
                Console.WriteLine(ex.StackTrace);
               
             }
-           
+            int a = 2;
+            int b = 4;
+            Person.GetGeneric(ref a,ref b );
+            Console.WriteLine(a+" "+b);
+            GameScore.App_Code.Stack<Person,Player> stack = new GameScore.App_Code.Stack<Person,Player>(5);
+            Person pers1 = new Person { Name = "Heinz" };
+            Person pers2 = new Person { Name = "Karl" };
+            Person pers3 = new Person { Name = "Anna" };
+          
+            //int o2 = 3;
+            //int o3 = 9;
+            //stack.Push(o1);
+            //stack.Push(o2);
+            //stack.Push(o3);                           
+            //int o4 = Convert.ToInt32(stack.Pull());
+           // Console.WriteLine(o4);
+            stack.Push(pers1);
+            stack.Push(pers2);
+            stack.Push(pers3);
+            // Console.WriteLine(o4);
+            stack.Dispose();
+            GameScore.App_Code.Stack<Person,Player>.PrintStack();
             InitializeComponent();            
         }
 

@@ -10,7 +10,7 @@ namespace GameScore.App_Code
     /// <summary>
     /// Player class for the GameScoreApp
     /// </summary>
-    public class Player : Person
+    public class Player : Person, IComparable
     {
         #region Enum
         public enum ScoreValue
@@ -130,6 +130,12 @@ namespace GameScore.App_Code
 
             return value1 + value2;
 
+        }
+
+        
+        public int CompareTo(object obj)
+        {
+            return _Name.CompareTo(obj);
         }
         #endregion
 
