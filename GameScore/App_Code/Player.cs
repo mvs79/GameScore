@@ -10,7 +10,7 @@ namespace GameScore.App_Code
     /// <summary>
     /// Player class for the GameScoreApp
     /// </summary>
-    public class Player
+    public class Player : Person
     {
         #region Enum
         public enum ScoreValue

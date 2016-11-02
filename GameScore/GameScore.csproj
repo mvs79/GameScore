@@ -64,6 +64,7 @@
     </Compile>
     <Compile Include="App_Code\Game.cs" />
     <Compile Include="App_Code\Games.cs" />
+    <Compile Include="App_Code\Person.cs" />
     <Compile Include="App_Code\Player.cs" />
     <Compile Include="TomcatException.cs" />
     <Compile Include="MainWindow.xaml.cs">
