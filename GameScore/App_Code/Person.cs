@@ -11,6 +11,7 @@ namespace GameScore.App_Code
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Street { get; set; }
+        public string EmailAdress { get; set; }
         public string PO { get; set; }
         public string Place { get; set; }
     }
