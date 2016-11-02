@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <DataGrid x:Name="dataGrid1" ItemsSource="{Binding gamesListing}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="459" Height="270" Margin="10,10,0,0">
+            <DataGridTextColumn Header="Spieler1" Binding="{Binding Game.GameName}"></DataGridTextColumn>
+            <!--<DataGridTextColumn Header="Spieler2"></DataGridTextColumn>
+            <DataGridTextColumn Header="Punkte"></DataGridTextColumn>
+            <DataGridTextColumn Header="Gegenpunkte"></DataGridTextColumn>
+            <DataGridTextColumn Header="Spielpunkte"></DataGridTextColumn>-->
+        </DataGrid>
+        <Button x:Name="button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="87" Margin="10,289,0,0" Click="button_Click">Laden</Button>
+
     </Grid>
 </Window>
