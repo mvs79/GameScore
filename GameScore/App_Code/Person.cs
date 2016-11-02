@@ -5,7 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace GameScore.App_Code
-{
+{   
+
+    /// <summary>
+    /// Class Person
+    /// </summary>
     public class Person
     {
         public string Name { get; set; }
